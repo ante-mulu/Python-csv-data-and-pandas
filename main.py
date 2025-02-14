@@ -7,5 +7,18 @@
 #             temperatures.append(int(row[1]))
 #     print(temperatures)
 import pandas
-data=pandas.read_csv("weather_data.csv")
-print(data["temp"])
+import  math
+data=pandas.read_csv('weather_data.csv')
+excel_data=data.to_dict()
+# print(excel_data)
+# list_data=data.temp
+# sum=0
+# av=list_data.mean()
+# print(av)
+print(data[data.day == "Monday"])
+# for temp in list_data:
+#     sum+=temp
+# average=round(sum/len(list_data),2)
+# print(average)
+
+# print(list_data)
